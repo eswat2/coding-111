@@ -1,3 +1,5 @@
+// NOTE:  proof-of-concept...
+//
 const app = new Vue({
   el: "#app",
   data: {
