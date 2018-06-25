@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding 111</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"
+            type="text/javascript"></script>
+    <link rel="stylesheet" 
+          href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" 
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+          rel="stylesheet"
+          type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="BoxWrapper">
+        <span class="Label">QTY</span>
+      </div>
+      <div class="BoxWrapper">
+        <div class="Box">
+          <input class="Quantity" 
+                 v-on:keypress="processKey"
+                 v-on:blur="reset"
+                 v-model="value"></input>
+          <div class="button plus" 
+               v-on:mouseover="over('plus')"
+               v-on:mouseout="out('plus')"
+               v-on:click="up">
+            <i class="fas fa-plus"
+               v-bind:class="colorPlus"></i>
+          </div>
+          <div class="button minus" 
+               v-on:mouseover="over('minus')"
+               v-on:mouseout="out('minus')"
+               v-on:click="down">
+            <i class="fas fa-minus"
+               v-bind:class="colorMinus"></i>
+          </div>
+        </div>
+      </div>
+      <hr class="Rule">
+      <div class="BoxWrapper padding">
+        <div class="Outside"
+             v-on:mouseover="over('right')"
+             v-on:mouseout="out('right')"
+             v-bind:class="colorRight"
+             v-on:click="gotcha">
+          <i class="fas fa-angle-double-right"></i>
+        </div>
+        <span class="info">
+          -- use this button to remove the focus...
+        </span>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

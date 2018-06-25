@@ -1,0 +1,101 @@
+.BoxWrapper {
+  font-family: "Roboto";
+  display: flex;
+  font-size: 15px;
+  border: 0px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+}
+
+.Label {
+  font-size: 24px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Rule {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Box {
+  display: flex;
+  border: 0px solid black;
+  border-radius: 5px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.Quantity {
+  order: 2;
+  border-width: 0px;
+  border-radius: 0px;
+  font-size: 18px;
+  margin-right: 10px;
+  height: 28px;
+  width: 50px;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+input { 
+  text-align: center; 
+}
+
+.button {
+  order: 1;
+  padding: 4px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.plus {
+  order: 3;
+}
+
+.minus {
+  order: 1;
+  padding-right: 15px;
+}
+
+.cBlack {
+  color: grey;
+}
+
+.cRed {
+  color: red;
+}
+
+.bgRed {
+  background-color: red;
+}
+
+.bgGrey {
+  background-color: grey;
+}
+
+.Outside {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+}
+
+.info {
+  padding: 10px;
+  font-style: italic;
+  color: grey;
+}
+
+.padding {
+  margin-left: 10px;
+}
